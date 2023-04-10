@@ -1,0 +1,6 @@
+def converter(celsius):
+  f = (9/5) * celsius + 32
+  print(f"temperatura em Farhrenheit: {f}")
+
+celsius = float(input("temp em Celsius°: "))
+converter(celsius)
