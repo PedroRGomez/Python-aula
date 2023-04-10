@@ -1,0 +1,8 @@
+opcao = "sim"
+soma = 0
+while(opcao == "sim"):
+  num = int(input("digite o numero:"))
+  soma = soma + num
+  opcao = input("eseja continuar? [sim/nao]:")
+  
+print(f"soma total:{soma}")
