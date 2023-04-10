@@ -1,0 +1,9 @@
+def imprime(n):
+  if(n==1):
+    return 1
+  else:
+    print(n)
+    return imprime(n - 1)
+
+n = int(input("n:"))
+print(imprime(n))
