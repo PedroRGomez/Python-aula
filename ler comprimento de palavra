@@ -1,0 +1,2 @@
+palavra = (input("digite a palavra: "))
+print("a palavra possui", len(palavra), " letras")
