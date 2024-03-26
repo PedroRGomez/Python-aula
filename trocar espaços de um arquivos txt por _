@@ -1,0 +1,8 @@
+nome_arquivo_entrada = 'dna.txt'
+
+# Lendo o conteúdo do arquivo e substituindo espaços por underscores
+with open(nome_arquivo_entrada, 'r') as arquivo_entrada:
+    conteudo = arquivo_entrada.read().strip().replace(' ', '_')
+
+# Imprimindo o conteúdo modificado
+print(conteudo)
