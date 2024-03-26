@@ -1,0 +1,15 @@
+def inverter_string(string):
+    return string[::-1]
+
+nome_arquivo_entrada = 'dna.txt'
+nome_arquivo_saida = 'dna_invertido.txt'
+
+with open(nome_arquivo_entrada, 'r') as arquivo_entrada:
+    string_original = arquivo_entrada.read().strip()  
+
+
+string_invertida = inverter_string(string_original)
+
+
+with open(nome_arquivo_saida, 'w') as arquivo_saida:
+    arquivo_saida.write(string_invertida)
