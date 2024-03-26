@@ -1,0 +1,18 @@
+# Função para contar as letras em uma string, excluindo espaços
+def contar_letras(string):
+    # Removendo espaços em branco da string e contando apenas letras
+    count = sum(1 for char in string if char.isalpha())
+    return count
+
+# Nome do arquivo de entrada
+nome_arquivo_entrada = 'dna.txt'
+
+# Lendo a string do arquivo de entrada
+with open(nome_arquivo_entrada, 'r') as arquivo_entrada:
+    string_original = arquivo_entrada.read().strip()  # Lendo e removendo espaços em branco, se houver
+
+# Contando as letras na string
+quantidade_letras = contar_letras(string_original)
+
+# Exibindo o resultado
+print("Quantidade de letras na string (sem contar espaços):", quantidade_letras)
